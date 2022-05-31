@@ -30,10 +30,10 @@ janela.geometry('600x600+600+100')
 janela.config(background='lightblue')
 
 # criar os widgets
-label1 = Label(janela, text='1º números', font='Arial 15 bold')
+label1 = Label(janela, text='1º números', background='lightblue', font='Arial 15 bold')
 entry1 = Entry(janela, font='Arial 15')
 
-label2 = Label(janela, text='2º números', font='Arial 15 bold')
+label2 = Label(janela, text='2º números', background='lightblue', font='Arial 15 bold')
 entry2 = Entry(janela, font='Arial 15')
 
 soma = Button(janela, text='soma', command=soma)
@@ -41,7 +41,7 @@ subtracao = Button(janela, text='subtracao', command=subtracao)
 multiplicacao = Button(janela, text='multiplicacao', command=multiplicacao)
 divisao = Button(janela, text='divisao', command=divisao)
 
-resultado = Label(janela, font='Arial 20')
+resultado = Label(janela, background='lightblue', font='Arial 20')
 
 # organizar os widgets
 label1.pack()
