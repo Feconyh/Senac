@@ -8,7 +8,7 @@ def aumenta():
     if int(numero["text"]) < 10:
         numero["text"] = int(numero["text"]) + 1
 def diminui():
-    if int(numero["text"]) > 0:
+    if int(numero["text"]) > -10:
         numero["text"] = int(numero["text"]) - 1
 
 
