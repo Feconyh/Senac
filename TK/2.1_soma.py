@@ -22,7 +22,6 @@ def divisao():
     else:
         resultado['text'] = 'Valor Invalido'
 
-
 # front-end
 # criar a janela
 janela = Tk()

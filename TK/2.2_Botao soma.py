@@ -11,7 +11,6 @@ def diminui():
     if int(numero["text"]) > -10:
         numero["text"] = int(numero["text"]) - 1
 
-
 janela.grid_rowconfigure(0, weight=1)
 
 janela.grid_columnconfigure(0, weight=1)
