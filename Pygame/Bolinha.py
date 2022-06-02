@@ -18,14 +18,14 @@ screen = pygame.display.set_mode((size))
 
 pygame.display.set_caption('😃👍')
 
-music = pygame.mixer.music.load('sons/BoxCat Games - Tricks.mp3')
+music = pygame.mixer.music.load('Senac\Pygame\sons\BoxCat Games - Tricks.mp3')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.3)
 
-song = pygame.mixer.Sound('sons/smw_coin.wav')
+song = pygame.mixer.Sound('Senac\Pygame\sons\smw_coin.wav')
 song.set_volume(1)
 
-carangueijo = pygame.image.load('imagens/pixil-frame-0.png')
+carangueijo = pygame.image.load('Senac\Pygame\imagens\pixil-frame-0.png')
 carangueijo_imagem = carangueijo.get_rect()
 
 font = pygame.font.SysFont('arial', 30, True, True)
