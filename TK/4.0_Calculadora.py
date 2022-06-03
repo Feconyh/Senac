@@ -28,7 +28,6 @@ class Botao():
         visor['text'] = str(resultado)
 
 # =======================================   Front-end    ==========================================================
-
 fonte = 'Arial 15'
 
 for row in range(6):
@@ -38,7 +37,6 @@ for column in range(4):
 
 visor = Label(screen, text='', font=fonte, background='gray')
 visor.grid(row=0, columnspan=4, sticky=NSEW)
-
 
 # =======================================   criando widgets / organiznado widgets    =============================
 # =======================================                Números                     =============================
