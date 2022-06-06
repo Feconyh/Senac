@@ -11,11 +11,11 @@ class Botao():
         nome = Button(screen, text=texto, font=fonte, background='white', command=comando)
         nome.grid(row=y, column=x, sticky=NSEW)
 
-    def entrada(valor):
+    def entrada(valor):    
         visor['text'] += valor
 
-    def sim(botao):
-        screen.bind(botao, lambda event: Botao.entrada(botao))
+    def sim(valor):
+        screen.bind(valor, lambda event: Botao.entrada(valor))
 
     def btn_c():
         visor['text'] = ''
@@ -35,9 +35,8 @@ for row in range(6):
 for column in range(4):
     screen.grid_columnconfigure(column, weight=1)
 
-visor = Label(screen, text='', font=fonte, background='gray')
-visor.grid(row=0, columnspan=4, sticky=NSEW)
-
+visor = Label(screen, font=fonte, background='gray')
+visor.grid(row=0, columnspan=4)
 # =======================================   criando widgets / organiznado widgets    =============================
 # =======================================                Números                     =============================
 Botao.botao('btn1','1',Botao.sim('1'),3,0)
@@ -54,7 +53,7 @@ Botao.botao('btn0','0',Botao.sim('0'),4,0)
 # =============================================         utilitarios    ===========================================
 Botao.botao('btn_c','C',Botao.btn_c,5,1)
 Botao.botao('btn_delete','Del',Botao.btn_delete,5,0)
-Botao.botao('btn_virgula','‚',Botao.sim(','),5,2)
+Botao.botao('btn_virgula','.',Botao.sim('.'),5,2)
 Botao.botao('btn_parentese1','(',Botao.sim('('),4,1)
 Botao.botao('btn_parentese2',')',Botao.sim(')'),4,2)
 
