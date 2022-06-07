@@ -9,13 +9,13 @@ root.minsize(width=500, height=400)
 
 fonte = 'Arial 15'
 
-f1 = Frame(root)
+f1 = Frame(root, bg='lightblue')
 f1.grid()
 
-f2 = Frame(root)
+f2 = Frame(root, bg='lightblue')
 f2.grid()
 
-f3 = Frame(root)
+f3 = Frame(root, bg='lightblue')
 f3.grid()
 
 class Dados_Pessoais:
